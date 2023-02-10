@@ -13,7 +13,7 @@ buttons.forEach((item) => {
         else if(display.innerText !='' && item.id == 'equal'){
             const t=display.innerText.indexOf('^')
             console.log(t)
-            if(t){
+            if(t!=-1){
                 const l=display.innerText.slice(0,t);
                 const R=display.innerText.slice(t+1);
                 console.log(l)
